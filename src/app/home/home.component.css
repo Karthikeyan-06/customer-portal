@@ -1,0 +1,146 @@
+.all{
+    height: 100%;
+    width: 100%;
+    background: url(https://www.esker.com/sites/default/files/group_images/cs_section_background_v3_0.jpg);
+    background-size: 100% 100%;
+    
+    ;
+    
+}
+
+.top{
+    height: 100px;
+  
+  
+   
+}
+.title{
+    padding-top: 50px;
+    padding-left: 100px;
+    font-weight: 1000;
+    font-size: 32px;
+    border-radius: 20px;
+    opacity: 0.8;
+    
+  
+}
+.middle{
+    width: 700px;
+    height: 200px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 450px;
+    padding-top: 50px;
+   
+
+}
+
+.button{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 900;   
+    border-radius: 7px;
+    font-family:'Courier New', Courier, monospace;
+    opacity: 0.9;
+    background-color: rgb(87, 209, 209);
+    box-shadow: 5px 5px 5px rgb(68, 111, 125); 
+}
+.button:hover{
+  border-radius: 8px; 
+  box-shadow: 7px 7px 5px white; 
+  
+}
+
+
+.sapimage{
+  margin-top: -160px;
+  margin-left: 1220px;
+  width: 320px;
+}
+
+
+
+.para{
+    font-style: italic;
+    padding-left: 60px;
+    padding-top: 10px;
+    font-size: 40px;
+    height: 50px;
+    width: 600px; 
+    font-weight: 900;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(92, 153, 207);
+    /* font-family:'Times New Roman', Times, serif;
+     */
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Montserrat Medium";
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 6s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+

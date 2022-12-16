@@ -1,0 +1,68 @@
+
+<div class="sidenav">
+  <a routerLink="">          <mat-icon >home</mat-icon> Home</a>
+  <a routerLink="../profile">   <mat-icon>person</mat-icon> Profile</a>
+  <a routerLink="../dashboard"> <mat-icon>dashboard</mat-icon> Dashboard</a>
+  <a routerLink="../finance">   <mat-icon> monetization_on</mat-icon> Finance</a>
+  
+</div>
+<div class="main" >
+  <div class="top"></div>
+
+  <mat-card class="imagecard" >
+    <mat-card-content>
+      <img src="https://kutumba-services.karnataka.gov.in/kutumbaservices/Images/Profile.png" class="image">
+    </mat-card-content>
+    <mat-card-content style="margin-left:230px ; margin-top:25px">
+      <h1 style="font-size:30px ; font-family:'Times New Roman', Times, serif " >ACCOUNT INFORMATION</h1>
+    </mat-card-content>
+    
+    
+
+  </mat-card>
+  <mat-card class="datacard">
+    
+
+    <mat-card-content class="info">
+      <mat-card class="heading" style="margin-left:20px ;" >Customer Number</mat-card>
+      <mat-card class="value"> {{customernumber}} </mat-card>
+      <mat-card class="iconcard">   <mat-icon class="icon">assignment_ind</mat-icon>   </mat-card>
+
+      <mat-card class="heading" style="margin-left:120px ;"> Name 1</mat-card>
+      <mat-card class="value"> {{name1}}    </mat-card>
+      <mat-card class="iconcard">   <mat-icon class="icon">person</mat-icon>   </mat-card>
+
+    </mat-card-content>
+
+    <mat-card-content class="info">
+      <mat-card class="heading" style="margin-left:20px ;">Name 2</mat-card>
+      <mat-card class="value"  > {{name2}} </mat-card>
+      <mat-card class="iconcard">     <mat-icon class="icon">person_outline</mat-icon>   </mat-card>
+
+      <mat-card class="heading" style="margin-left:120px ;" >City</mat-card>
+      <mat-card class="value" > {{city}}  </mat-card>
+      <mat-card class="iconcard">    <mat-icon class="icon"> location_on</mat-icon>  </mat-card>
+    </mat-card-content>
+
+    <mat-card-content class="info">
+      <mat-card class="heading" style="margin-left:20px ;">Postal Code</mat-card>
+      <mat-card class="value"  > {{postalcode}} </mat-card>
+      <mat-card class="iconcard">   <mat-icon class="icon"> mail_outline</mat-icon>  </mat-card>
+
+      <mat-card class="heading" style="margin-left:120px ;" >Region</mat-card>
+      <mat-card class="value" >{{region}} </mat-card>
+      <mat-card class="iconcard">   <mat-icon class="icon">gps_fixed</mat-icon>   </mat-card>
+    </mat-card-content>
+
+    <mat-card-content class="info">
+      <mat-card class="heading" style="margin-left:20px ;"> Phone Number</mat-card>
+      <mat-card class="value" > {{phonenumber}} </mat-card>
+      <mat-card class="iconcard">   <mat-icon class="icon"> call</mat-icon>    </mat-card>
+
+      
+    </mat-card-content>
+  </mat-card>
+
+
+  
+</div>

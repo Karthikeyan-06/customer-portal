@@ -1,0 +1,106 @@
+<div class="sidenav">
+  <a routerLink=""> <mat-icon>home</mat-icon> Home</a>
+  <a routerLink="../profile"> <mat-icon>person</mat-icon> Profile</a>
+  <a routerLink="../dashboard"> <mat-icon >dashboard</mat-icon> Dashboard</a>
+  <a routerLink="../finance"> <mat-icon> monetization_on</mat-icon> Finance</a>
+</div>
+<div class="main">
+
+  <div class="top">
+  </div>
+
+  <div class="twocarddiv">
+      <mat-card class="firstcard">
+        <span> <img class="firstimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWWhFQ8hwoqQIprW5JZIfLTdAasZfdGrQhVNYyx2YM_ljGTDDQD10sBgbg0pzXoIfblmc&usqp=CAU"> </span>
+        <span class="firstheading" >INQUIRY</span>
+        <span class="firstbutton"> <button mat-raised-button class="displaybutton">Display</button>  </span>
+        
+
+
+        <div class="table-wrapper1">
+            <table class="fl-table1">
+                <thead>
+                <tr class="tablerow1" >
+                    <th class="tabledata1">HEADER1</th>
+                    <th class="tabledata1">HEADER2</th>
+                    <th class="tabledata1">HEADER3</th>
+                    <th class="tabledata1">HEADER4</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="tablerow1" *ngFor="let inqdata of inquirydata ; let i = index">
+                    <td class="tabledata1" *ngIf="i < 3">{{inqdata.VBELN._text}}</td>
+                    <td class="tabledata1" *ngIf="i < 3">{{inqdata.ANGDT._text}}</td>
+                    <td class="tabledata1" *ngIf="i < 3">{{inqdata.AWAHR._text}}</td>
+                    <td class="tabledata1" *ngIf="i < 3">{{inqdata.BUKRS_VF._text}}</td>
+                  
+                </tr>
+                <tbody>
+            </table>
+        </div>
+
+
+
+      </mat-card>
+      
+
+      <mat-card class="secondcard">
+        <span> <img class="secondimage" src="./assets/delivery2.png"> </span>
+        <span class="secondheading" >DELIVERY DETAIL</span>
+        <span class="secondtbutton"> <button mat-raised-button class="displaybutton">Display</button>  </span>
+
+        <div class="table-wrapper1">
+          <table class="fl-table1">
+              <thead>
+              <tr class="tablerow1">
+                  <th class="tabledata1">Header 1</th>
+                  <th class="tabledata1">Header 2</th>
+                  <th class="tabledata1">Header 3</th>
+                  <th class="tabledata1">Header 4</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="tablerow1" *ngFor="let delidata of deliverydata ; let i = index" >
+                  <td class="tabledata1" *ngIf="(i>0 && i<4)">{{delidata.VBELN._text}}</td>
+                  <td class="tabledata1" *ngIf="(i>0 && i<4)">{{delidata.ERZET._text}}</td>
+                  <td class="tabledata1" *ngIf="(i>0 && i<4)">{{delidata.ERDAT._text}}</td>
+                  <td class="tabledata1" *ngIf="">{{delidata.VKORG._text}}</td>
+                
+              </tr>
+              <tbody>
+          </table>
+        </div>
+
+      </mat-card>
+  </div>
+
+  <mat-card class="thirdcard">
+    <span> <img class="thirdimage" src="./assets/Purchase.svg"> </span>
+    <span class="thirdheading" >SALE ORDER</span>
+    <span class="thirdbutton"> <button mat-raised-button class="displaybutton">Display</button>  </span>
+
+    <div class="table-wrapper1">
+      <table class="fl-table1">
+          <thead>
+          <tr class="tablerow1">
+              <th class="tabledata1">Header 1</th>
+              <th class="tabledata1">Header 2</th>
+              <th class="tabledata1">Header 3</th>
+              <th class="tabledata1">Header 4</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="tablerow1" *ngFor="let saldata of saledata ; let i = index">
+              <td class="tabledata1"  *ngIf="i < 3"> {{saldata.DIVISION._text}} </td>
+              <td class="tabledata1"  *ngIf="i < 3"> {{saldata.DOC_DATE._text}} </td>
+              <td class="tabledata1"  *ngIf="i < 3"> {{saldata.DOC_STATUS._text}}</td>
+              <td class="tabledata1"  *ngIf="i < 3"> {{saldata.DOC_TYPE._text}}</td>
+            
+          </tr>
+          <tbody>
+      </table>
+    </div>
+
+  </mat-card>
+
+</div>
